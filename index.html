@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJIsaacVies Producciones</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+
+        <ul class="menu">
+
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#resenas">Reseñas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- HEADER -->
+    <header id="inicio">
+
+        <div class="overlay">
+
+            <h1>DJISAACVIES PRODUCCIONES</h1>
+
+            <p>
+                DJ • Sonido Profesional • Iluminación • Animación de Eventos
+            </p>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- SECCION SERVICIOS -->
+        <section id="servicios">
+
+            <h2>Nuestros Servicios</h2>
+
+            <div class="cards-container">
+
+                <article class="card">
+
+                    <div class="card-media">
+                        <!-- COLOCAR IMAGEN DEL DJ -->
+                        <img src="img/dj-service.jpg" alt="Servicio DJ">
+                    </div>
+
+                    <h3>DJ Profesional</h3>
+
+                    <p>
+                        Musicalización para bodas, cumpleaños, eventos corporativos y fiestas privadas.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-media">
+                        <!-- COLOCAR IMAGEN DE SONIDO -->
+                        <img src="img/sound-service.jpg" alt="Sonido profesional">
+                    </div>
+
+                    <h3>Sonido Profesional</h3>
+
+                    <p>
+                        Equipos de sonido de alta potencia para todo tipo de eventos.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-media">
+                        <!-- COLOCAR IMAGEN DE ILUMINACIÓN -->
+                        <img src="img/light-service.jpg" alt="Iluminación">
+                    </div>
+
+                    <h3>Iluminación</h3>
+
+                    <p>
+                        Luces robóticas, humo, efectos LED y ambientación profesional.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-media">
+                        <!-- COLOCAR IMAGEN DE ANIMACIÓN -->
+                        <img src="img/animation-service.jpg" alt="Animación">
+                    </div>
+
+                    <h3>Animación</h3>
+
+                    <p>
+                        Animación en vivo para mantener la energía y diversión de tu fiesta.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- SECCION GALERIA -->
+        <section id="galeria">
+
+            <h2>Galería Multimedia</h2>
+
+            <div class="galeria-container">
+
+                <div class="galeria-item">
+
+                    <!-- SUGERENCIA:
+                    COLOCAR VIDEO PROMOCIONAL DEL DJ -->
+                    <video controls>
+                        <source src="media/video-demo.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+
+                <div class="galeria-item">
+
+                    <!-- SUGERENCIA:
+                    COLOCAR IFRAME DE YOUTUBE -->
+                    <iframe 
+                        src="https://www.youtube.com/embed/VIDEO_ID"
+                        title="Video DJ"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SECCION RESEÑAS -->
+        <section id="resenas">
+
+            <h2>Reseñas de Clientes</h2>
+
+            <div class="grid-resenas">
+
+                <article class="resena">
+
+                    <h3>María G.</h3>
+
+                    <p>
+                        “Excelente servicio. El sonido fue impecable y la música espectacular.”
+                    </p>
+
+                </article>
+
+                <article class="resena">
+
+                    <h3>Carlos R.</h3>
+
+                    <p>
+                        “La iluminación transformó totalmente nuestra fiesta.”
+                    </p>
+
+                </article>
+
+                <article class="resena">
+
+                    <h3>Ana P.</h3>
+
+                    <p>
+                        “Muy profesional y puntual. Recomendado al 100%.”
+                    </p>
+
+                </article>
+
+                <article class="resena">
+
+                    <h3>José M.</h3>
+
+                    <p>
+                        “La animación estuvo increíble. Todos bailaron toda la noche.”
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- SECCION CONTACTO -->
+        <section id="contacto">
+
+            <h2>Solicita Presupuesto</h2>
+
+            <!-- FORMULARIO FORMSPREE -->
+            <form action="https://formspree.io/f/TU_ENDPOINT" method="POST">
+
+                <input type="text" name="nombre" placeholder="Nombre completo" required>
+
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+
+                <input type="tel" name="telefono" placeholder="Teléfono">
+
+                <select name="servicio" required>
+
+                    <option value="">Seleccione un servicio</option>
+
+                    <option value="dj">DJ Profesional</option>
+
+                    <option value="sonido">Sonido</option>
+
+                    <option value="iluminacion">Iluminación</option>
+
+                    <option value="animacion">Animación</option>
+
+                </select>
+                
+                <textarea name="mensaje" id="mens" rows="6" placeholder="Especificaciones del Evento"></textarea>
+
+                <button type="submit">
+                    Enviar Solicitud
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 DJIsaacVies Producciones - Todos los derechos reservados
+        </p>
+
+    </footer>
+
+</body>
+</html>
